@@ -1,0 +1,14 @@
+{
+  "name": "nft3",
+  "version": "1.0.0",
+  "description": "Random NFT generation based on the layers folder",
+  "main": "index.js",
+  "scripts": {
+    "rands": "node ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.32.4"
+  }
+}
