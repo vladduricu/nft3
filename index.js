@@ -1,5 +1,7 @@
-const { readFileSync, writeFileSync, readdirSync, rmSync, existsSync, mkdirSync } = require('fs');
+const { readFileSync, writeFileSync } = require('fs');
 const sharp = require('sharp');
+
+const NUMBER_OF_IMAGES = 900;
 
 const TEMPLATE = `
     <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,4 +119,4 @@ function createImage() {
 
 do {
     createImage()
-} while (takenFaces.length < 999)
+} while (takenFaces.length < NUMBER_OF_IMAGES)
